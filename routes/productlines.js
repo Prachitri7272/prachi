@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const { body, check } = require('express-validator');
+const { body, check } = require('express-validator/check');
 let productlinescontroller =require('../controller/productlines.controller');
 const multer=require('multer');
 // const upload=multer({ dest: 'uploads/'})

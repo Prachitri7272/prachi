@@ -27,12 +27,12 @@ module.exports = {
             if(req.file){
             productImages=req.file.filename;
             }
-        const productlines = {
+        const productline = {
             productType: req.body.productType,
-            productImages:req.body.productimages
+            productImages:req.body.productImages
             
         };
-        productlines.create(productlines).then((result) => {
+        productlines.create(productline).then((result) => {
             res.send({ error: false, message: "productline created successfully" });
         }).catch((err) => {
             res.send({ error: true, message: err.message });
